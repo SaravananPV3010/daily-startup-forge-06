@@ -27,7 +27,7 @@ const initialComments: Comment[] = [
       avatar: '',
       verified: true
     },
-    text: 'This is a fantastic idea! I've been thinking about something similar for healthcare. Would love to collaborate.',
+    text: "This is a fantastic idea! I've been thinking about something similar for healthcare. Would love to collaborate.",
     date: '2 days ago',
     likes: 12,
     isLiked: false
@@ -39,7 +39,7 @@ const initialComments: Comment[] = [
       avatar: '',
       verified: true
     },
-    text: 'I've worked in this space before. The market size is actually bigger than estimated. Happy to share insights!',
+    text: "I've worked in this space before. The market size is actually bigger than estimated. Happy to share insights!",
     date: '1 day ago',
     likes: 8,
     isLiked: false
