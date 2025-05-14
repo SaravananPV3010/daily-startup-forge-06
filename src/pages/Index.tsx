@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Header from '@/components/Header';
 import DailyIdea from '@/components/DailyIdea';
@@ -6,7 +5,6 @@ import TalentSection from '@/components/TalentSection';
 import Footer from '@/components/Footer';
 import { featuredIdea } from '@/data/ideas';
 import { Button } from '@/components/ui/button';
-import { ArrowRight } from 'lucide-react';
 
 const Index = () => {
   return (
@@ -15,7 +13,6 @@ const Index = () => {
       
       {/* Hero Section */}
       <section className="py-16 md:py-24 container mx-auto px-4 text-center relative">
-        <div className="absolute inset-0 bg-[url('/lovable-uploads/c1aef68c-c00d-404f-8ca8-245e2a4a5458.png')] bg-cover opacity-10 z-0"></div>
         <div className="relative z-10">
           <p className="text-blue-500 font-medium mb-3">FORGEVISION.CO</p>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
