@@ -31,7 +31,7 @@ const TalentCard: React.FC<{ talent: TalentType }> = ({ talent }) => {
         </div>
       </CardContent>
       <CardFooter className="flex justify-between">
-        <Badge variant={talent.available ? "success" : "secondary"}>
+        <Badge variant={talent.available ? "secondary" : "outline"} className={talent.available ? "bg-green-100 text-green-800 hover:bg-green-200" : ""}>
           {talent.available ? "Available Now" : "Unavailable"}
         </Badge>
         <Button size="sm">View Profile</Button>
