@@ -1,46 +1,22 @@
 
 export interface IdeaType {
-  id: number;
-  date: string;
+  id: string;
   title: string;
   description: string;
   problem: string;
   solution: string;
   marketSize: string;
   tags: string[];
+  date: string;
 }
 
-export const ideas: IdeaType[] = [
-  {
-    id: 1,
-    date: "May 14, 2025",
-    title: "VirtualMentor",
-    description: "AI-powered mentorship platform for early-stage founders",
-    problem: "First-time founders struggle with access to quality mentorship and guidance during crucial early stages.",
-    solution: "An AI platform that analyzes startup metrics and provides personalized mentorship, connecting founders with relevant advisors when needed.",
-    marketSize: "~$5B global startup mentorship market",
-    tags: ["AI", "SaaS", "Entrepreneurship"]
-  },
-  {
-    id: 2,
-    date: "May 13, 2025",
-    title: "EcoPackage",
-    description: "Biodegradable packaging solution for e-commerce",
-    problem: "E-commerce shipping creates massive packaging waste that harms our environment.",
-    solution: "Plant-based packaging materials that decompose in 30 days while maintaining durability during shipping.",
-    marketSize: "$8.5B sustainable packaging market",
-    tags: ["Sustainability", "E-commerce", "Manufacturing"]
-  },
-  {
-    id: 3,
-    date: "May 12, 2025",
-    title: "HealthSync",
-    description: "Unified health data platform for personalized medicine",
-    problem: "Healthcare data is fragmented across providers, limiting treatment effectiveness.",
-    solution: "Secure platform that aggregates patient data from all providers for AI-powered treatment recommendations.",
-    marketSize: "$15B healthcare analytics market",
-    tags: ["Healthcare", "AI", "Data"]
-  }
-];
-
-export const featuredIdea = ideas[0];
+export const featuredIdea: IdeaType = {
+  id: "idea-1",
+  title: "AI-Powered Content Recommendation Engine",
+  description: "A platform that uses artificial intelligence to analyze user preferences and deliver highly personalized content recommendations across multiple media types.",
+  problem: "Content overload is overwhelming users, making it difficult to discover relevant material that matches their interests and preferences.",
+  solution: "Our AI algorithm analyzes consumption patterns, explicit preferences, and implicit behaviors to curate a personalized content feed that evolves with the user.",
+  marketSize: "The global content recommendation engine market is projected to reach $14.8 billion by 2026, with a CAGR of 28.7% from 2021.",
+  tags: ["AI", "Machine Learning", "Content", "Personalization"],
+  date: "May 14, 2025"
+};

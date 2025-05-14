@@ -1,7 +1,10 @@
+
 import React from 'react';
 import Header from '@/components/Header';
 import DailyIdea from '@/components/DailyIdea';
 import TalentSection from '@/components/TalentSection';
+import SkillVerification from '@/components/SkillVerification';
+import SmartRecommendations from '@/components/SmartRecommendations';
 import Footer from '@/components/Footer';
 import { featuredIdea } from '@/data/ideas';
 import { Button } from '@/components/ui/button';
@@ -74,7 +77,9 @@ const Index = () => {
       
       <main className="flex-grow">
         <DailyIdea idea={featuredIdea} />
+        <SkillVerification />
         <TalentSection />
+        <SmartRecommendations />
         
         <section className="py-16 container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4 text-white">Get a New Startup Idea Every Day</h2>
