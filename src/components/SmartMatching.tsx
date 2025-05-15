@@ -5,9 +5,10 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Checkbox } from '@/components/ui/checkbox';
-import { Form, FormControl, FormField, FormItem, FormLabel } from '@/components/ui/form';
+import { Label } from '@/components/ui/label';
 import { AspectRatio } from '@/components/ui/aspect-ratio';
 import { Link } from 'lucide-react';
+import { useForm } from 'react-hook-form';
 
 interface Candidate {
   id: string;
@@ -83,6 +84,9 @@ const SmartMatching = () => {
     "React", "UI/UX", "Machine Learning"
   ]);
   
+  const seniorForm = useForm();
+  const availabilityForm = useForm();
+  
   const allSkills = Array.from(
     new Set([
       ...selectedSkills,
@@ -146,76 +150,40 @@ const SmartMatching = () => {
                   <div className="bg-slate-800/50 p-3 rounded-lg">
                     <h4 className="font-medium text-slate-300 mb-1">Experience Level</h4>
                     <div className="space-y-2 text-sm">
-                      <Form>
+                      <form>
                         <div className="flex items-center space-x-2">
-                          <FormField
-                            name="senior"
-                            render={({ field }) => (
-                              <FormItem className="flex items-center space-x-2">
-                                <FormControl>
-                                  <Checkbox id="senior" checked={field.value} />
-                                </FormControl>
-                                <FormLabel htmlFor="senior" className="text-slate-400">
-                                  Senior (5+ years)
-                                </FormLabel>
-                              </FormItem>
-                            )}
-                          />
+                          <Checkbox id="senior" />
+                          <Label htmlFor="senior" className="text-slate-400">
+                            Senior (5+ years)
+                          </Label>
                         </div>
                         <div className="flex items-center space-x-2">
-                          <FormField
-                            name="mid"
-                            render={({ field }) => (
-                              <FormItem className="flex items-center space-x-2">
-                                <FormControl>
-                                  <Checkbox id="mid" checked={field.value} />
-                                </FormControl>
-                                <FormLabel htmlFor="mid" className="text-slate-400">
-                                  Mid-level (2-5 years)
-                                </FormLabel>
-                              </FormItem>
-                            )}
-                          />
+                          <Checkbox id="mid" />
+                          <Label htmlFor="mid" className="text-slate-400">
+                            Mid-level (2-5 years)
+                          </Label>
                         </div>
-                      </Form>
+                      </form>
                     </div>
                   </div>
                   
                   <div className="bg-slate-800/50 p-3 rounded-lg">
                     <h4 className="font-medium text-slate-300 mb-1">Availability</h4>
                     <div className="space-y-2 text-sm">
-                      <Form>
+                      <form>
                         <div className="flex items-center space-x-2">
-                          <FormField
-                            name="fullTime"
-                            render={({ field }) => (
-                              <FormItem className="flex items-center space-x-2">
-                                <FormControl>
-                                  <Checkbox id="fullTime" checked={field.value} />
-                                </FormControl>
-                                <FormLabel htmlFor="fullTime" className="text-slate-400">
-                                  Full-time
-                                </FormLabel>
-                              </FormItem>
-                            )}
-                          />
+                          <Checkbox id="fullTime" />
+                          <Label htmlFor="fullTime" className="text-slate-400">
+                            Full-time
+                          </Label>
                         </div>
                         <div className="flex items-center space-x-2">
-                          <FormField
-                            name="partTime"
-                            render={({ field }) => (
-                              <FormItem className="flex items-center space-x-2">
-                                <FormControl>
-                                  <Checkbox id="partTime" checked={field.value} />
-                                </FormControl>
-                                <FormLabel htmlFor="partTime" className="text-slate-400">
-                                  Part-time / Contract
-                                </FormLabel>
-                              </FormItem>
-                            )}
-                          />
+                          <Checkbox id="partTime" />
+                          <Label htmlFor="partTime" className="text-slate-400">
+                            Part-time / Contract
+                          </Label>
                         </div>
-                      </Form>
+                      </form>
                     </div>
                   </div>
                 </div>
