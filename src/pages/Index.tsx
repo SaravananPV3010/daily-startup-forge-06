@@ -55,7 +55,7 @@ const Index = () => {
                     stroke="transparent" 
                   />
                   <text 
-                    className="text-2xl md:text-3xl font-bold fill-transparent"
+                    className="text-xl md:text-2xl font-bold fill-transparent"
                     style={{ 
                       fill: "url(#gradientText)",
                       textAnchor: "middle" 
