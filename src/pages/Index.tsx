@@ -50,12 +50,12 @@ const Index = () => {
                 >
                   <path 
                     id="curvedPath" 
-                    d="M0,150 Q250,-30 500,150" 
+                    d="M0,150 Q250,-50 500,150" 
                     fill="none" 
                     stroke="transparent" 
                   />
                   <text 
-                    className="text-xl md:text-2xl font-bold fill-transparent"
+                    className="text-lg md:text-xl font-bold fill-transparent"
                     style={{ 
                       fill: "url(#gradientText)",
                       textAnchor: "middle" 
