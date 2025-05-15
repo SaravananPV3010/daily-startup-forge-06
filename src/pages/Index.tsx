@@ -35,16 +35,23 @@ const Index = () => {
         </div>
       </section>
       
-      {/* Curved Text Section */}
+      {/* Curved Text Section with Arch Shape */}
       <section className="py-16 text-center relative">
         <div className="container mx-auto px-4">
+          {/* Arch Shape Container */}
           <div className="relative">
-            <h2 className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-yellow-400 to-orange-500 text-4xl md:text-5xl font-bold transform rotate-[-2deg]">
-              From <span className="font-extrabold">Idea</span> to Funded <span className="font-extrabold">Startup</span> 🚀 <span className="font-extrabold">Build</span> or <span className="font-extrabold">Join</span> Your <span className="font-extrabold">Dream Team</span>
-            </h2>
-            <p className="text-slate-300 mt-6 max-w-3xl mx-auto text-lg">
-              Kickstart your journey with the right team, advice and investor exposure - All in one place.
-            </p>
+            {/* Arch background */}
+            <div className="absolute left-1/2 transform -translate-x-1/2 w-[90%] max-w-4xl h-60 rounded-t-[100%] bg-purple-800/30 backdrop-blur-sm -top-10"></div>
+            
+            {/* Text content with gradient */}
+            <div className="relative pt-8">
+              <h2 className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-yellow-400 to-orange-500 text-4xl md:text-5xl font-bold transform rotate-[-2deg]">
+                From <span className="font-extrabold">Idea</span> to Funded <span className="font-extrabold">Startup</span> 🚀 <span className="font-extrabold">Build</span> or <span className="font-extrabold">Join</span> Your <span className="font-extrabold">Dream Team</span>
+              </h2>
+              <p className="text-slate-300 mt-6 max-w-3xl mx-auto text-lg">
+                Kickstart your journey with the right team, advice and investor exposure - All in one place.
+              </p>
+            </div>
           </div>
         </div>
       </section>

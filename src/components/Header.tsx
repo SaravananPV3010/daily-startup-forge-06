@@ -15,7 +15,7 @@ const Header = () => {
         <div className="flex items-center gap-6">
           <a href="#" className="text-slate-300 hover:text-white">FAQs</a>
           <a href="#" className="text-slate-300 hover:text-white">Blogs</a>
-          <Button variant="outline" className="border-white text-white hover:bg-white/10">LOGIN</Button>
+          <Button variant="outline" className="border-yellow-400 bg-yellow-400 text-black hover:bg-yellow-500 hover:text-black hover:border-yellow-500">LOGIN</Button>
         </div>
       </div>
     </header>
