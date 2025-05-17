@@ -44,13 +44,13 @@ const Index = () => {
               <div className="mx-auto max-w-4xl relative">
                 {/* Text follows semi-circular path */}
                 <svg 
-                  viewBox="0 0 500 180" 
+                  viewBox="0 0 500 200" 
                   className="w-full h-auto"
                   preserveAspectRatio="xMidYMid meet"
                 >
                   <path 
                     id="curvedPath" 
-                    d="M10,170 Q250,-20 490,170" 
+                    d="M20,190 Q250,0 480,190" 
                     fill="none" 
                     stroke="transparent" 
                   />
