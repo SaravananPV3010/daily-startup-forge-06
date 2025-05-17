@@ -44,18 +44,18 @@ const Index = () => {
               <div className="mx-auto max-w-4xl relative">
                 {/* Text follows semi-circular path */}
                 <svg 
-                  viewBox="0 0 500 150" 
+                  viewBox="0 0 500 180" 
                   className="w-full h-auto"
                   preserveAspectRatio="xMidYMid meet"
                 >
                   <path 
                     id="curvedPath" 
-                    d="M0,150 Q250,-50 500,150" 
+                    d="M10,170 Q250,-20 490,170" 
                     fill="none" 
                     stroke="transparent" 
                   />
                   <text 
-                    className="text-lg md:text-xl font-bold fill-transparent"
+                    className="text-base md:text-lg font-bold fill-transparent"
                     style={{ 
                       fill: "url(#gradientText)",
                       textAnchor: "middle" 
